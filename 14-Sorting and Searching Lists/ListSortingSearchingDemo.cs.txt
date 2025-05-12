@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 8, 3, 5, 1, 9 };
+
+        // Listeyi sıralama
+        numbers.Sort();
+        Console.WriteLine("Sorted List:");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+
+        // Arama işlemi
+        int searchResult = numbers.BinarySearch(5);
+        if (searchResult >= 0)
+        {
+            Console.WriteLine("Number 5 found at index: " + searchResult);
+        }
+        else
+        {
+            Console.WriteLine("Number 5 not found");
+        }
+    }
+}

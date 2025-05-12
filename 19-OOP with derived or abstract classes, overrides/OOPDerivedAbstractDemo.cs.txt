@@ -1,0 +1,23 @@
+using System;
+
+abstract class Animal
+{
+    public abstract void Speak();  // Abstract method
+}
+
+class Dog : Animal
+{
+    public override void Speak()  // Override method
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Dog myDog = new Dog();
+        myDog.Speak();
+    }
+}

@@ -1,0 +1,23 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 3, 1, 4, 1, 5, 9, 2 };
+
+        // LINQ sorgusu: Where, OrderBy ve Select
+        var query = from num in numbers
+                    where num > 2
+                    orderby num
+                    select num;
+
+        Console.WriteLine("Numbers greater than 2, sorted:");
+        foreach (var num in query)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // 1'den 10'a kadar olan sayıları yazdıran for döngüsü
+        Console.WriteLine("Printing numbers from 1 to 10:");
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+        }
+
+        // 1'den 100'e kadar olan sayıların toplamını hesaplayan for döngüsü
+        int sum = 0;
+        for (int i = 1; i <= 100; i++)
+        {
+            sum += i;
+        }
+        Console.WriteLine("Total sum of numbers from 1 to 100: " + sum);
+
+        // 5'in çarpanlarını yazdıran for döngüsü
+        Console.WriteLine("Multiplication table of 5:");
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"5 x {i} = {5 * i}");
+        }
+
+        // Bir diziyi for döngüsü ile yazdıran örnek
+        string[] fruits = { "Apple", "Banana", "Cherry", "Date" };
+        Console.WriteLine("List of fruits:");
+        for (int i = 0; i < fruits.Length; i++)
+        {
+            Console.WriteLine(fruits[i]);
+        }
+    }
+}

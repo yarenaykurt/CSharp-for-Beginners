@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // List oluşturma
+        List<string> names = new List<string>();
+        names.Add("Alice");
+        names.Add("Bob");
+        names.Add("Charlie");
+
+        // Liste elemanlarını yazdırma
+        Console.WriteLine("Names in the list:");
+        foreach (string name in names)
+        {
+            Console.WriteLine(name);
+        }
+
+        // Liste elemanlarını erişme
+        Console.WriteLine("First name in the list: " + names[0]);
+    }
+}

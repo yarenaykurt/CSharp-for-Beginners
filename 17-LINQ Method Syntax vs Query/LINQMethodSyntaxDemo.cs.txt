@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 3, 1, 4, 1, 5, 9, 2 };
+
+        // Query syntax
+        var querySyntax = from num in numbers
+                          where num > 2
+                          orderby num
+                          select num;
+
+        Console.WriteLine("Query Syntax result:");
+        foreach (var num in querySyntax)
+        {
+            Console.WriteLine(num);
+        }
+
+        // Method syntax
+        var methodSyntax = numbers.Where(num => num > 2).OrderBy(num => num);
+
+        Console.WriteLine("Method Syntax result:");
+        foreach (var num in methodSyntax)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}

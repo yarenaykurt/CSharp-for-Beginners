@@ -1,0 +1,13 @@
+  using System;
+
+  class Program
+  {
+      static void Main()
+      {
+          string name = "John Doe";
+          Console.WriteLine(name.ToUpper());
+          Console.WriteLine(name.ToLower());
+          Console.WriteLine(name.Substring(0, 4));
+          Console.WriteLine(name.Contains("Doe"));
+      }
+  }

@@ -1,0 +1,13 @@
+  using System;
+
+  class Program
+  {
+      static void Main()
+      {
+          Console.WriteLine(Math.Round(1.6));
+          Console.WriteLine(Math.Ceiling(1.2));
+          Console.WriteLine(Math.Floor(1.2));
+          Console.WriteLine(Math.Max(3, 5));
+          Console.WriteLine(Math.Min(3, 5));
+      }
+  }

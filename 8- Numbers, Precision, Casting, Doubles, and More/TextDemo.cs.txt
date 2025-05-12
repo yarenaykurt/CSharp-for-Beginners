@@ -1,0 +1,12 @@
+   using System;
+
+  class Program
+  {
+      static void Main()
+      {
+          string sentence = "  Hello World!  ";
+          Console.WriteLine(sentence.Trim());
+          Console.WriteLine(sentence.ToUpper());
+          Console.WriteLine(sentence.Replace("World", "C#"));
+      }
+  }

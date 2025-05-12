@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Dizi (Array) örneği
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        // Array'deki elemanları yazdırma
+        Console.WriteLine("Array elements:");
+        foreach (int num in numbers)
+        {
+            Console.WriteLine(num);
+        }
+
+        // List örneği
+        List<int> numberList = new List<int> { 10, 20, 30 };
+
+        // List elemanlarını yazdırma
+        Console.WriteLine("List elements:");
+        foreach (int number in numberList)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
